@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>About - My Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,7 +16,7 @@
       <a class="navbar-brand" href="index.html">My Portfolio</a>
       <div class="navbar-nav">
         <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link active" aria-current="page" href="about.html">About</a>
         <a class="nav-link" href="portfolio.html">Portfolio</a>
       </div>
     </div>
@@ -27,83 +27,147 @@
       <div class="card-body p-5">
 
         <header class="mb-4 pb-3 border-bottom">
-          <h1 class="display-5 fw-semibold mb-2">Welcome to My Portfolio</h1>
+          <h1 class="display-5 fw-semibold mb-2">About Me</h1>
           <p class="lead text-secondary mb-3">
             This is a simple portfolio website built for my university assignment.
           </p>
-          <div class="d-flex flex-wrap gap-2">
-            <span class="badge rounded-pill text-bg-dark px-3 py-2">HTML</span>
-            <span class="badge rounded-pill text-bg-dark px-3 py-2">CSS</span>
-            <span class="badge rounded-pill text-bg-dark px-3 py-2">Bootstrap</span>
-            <span class="badge rounded-pill text-bg-dark px-3 py-2">Javascript</span>
-          </div>
         </header>
+        <div class="p-4 mb-4 rounded-4 border bg-white">
+          <div class="row g-3 align-items-center">
+            <div class="col-md-auto text-center">
+              <img src="images/profile.png" alt="Profile photo"
+                class="rounded-circle border border-4 border-light shadow-sm"
+                style="width:110px;height:110px;object-fit:cover;">
+            </div>
+
+            <div class="col">
+              <h2 class="h4 mb-1">Ellie Robson</h2>
+              <p class="text-secondary mb-2">IT Management for Business Student
+              </p>
+
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge rounded-pill px-3 py-2 about-badge">HTML</span>
+                <span class="badge rounded-pill px-3 py-2 about-badge">CSS</span>
+                <span class="badge rounded-pill px-3 py-2 about-badge">Bootstrap</span>
+                <span class="badge rounded-pill px-3 py-2 about-badge">UI</span>
+                <span class="badge rounded-pill px-3 py-2 about-badge">IT Systems Development and Management</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="row g-4">
-          <div class="col-12">
-            
-        <section class="mb-4">
-  <div class="card border-0 bg-white shadow-sm rounded-4">
-    <div class="card-body p-4">
-      <h2 class="h5 mb-3">Contact</h2>
+          <div class="col-lg-4">
 
-      <div class="d-grid gap-2">
-        <a class="btn btn-dark btn-lg" href="mailto:example@email.com">Email</a>
-        <a class="btn btn-outline-dark btn-lg" href="#">GitHub</a>
-        <a class="btn btn-outline-dark btn-lg" href="#">LinkedIn</a>
-      </div>
+            <section class="mb-4">
+              <div class="card border-0 bg-white shadow-sm rounded-4">
+                <div class="card-body p-4">
+                  <h2 class="h5 mb-3">Contact</h2>
 
-    </div>
-  </div>
-</section>
+                  <div class="d-grid gap-2">
+                    <a class="btn btn-dark btn-lg" href="mailto:example@email.com">Email</a>
+                    <a class="btn btn-outline-dark btn-lg" href="#">GitHub</a>
+                    <a class="btn btn-outline-dark btn-lg" href="#">LinkedIn</a>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="col-lg-8">
+
+
 
             <section class="mb-4">
               <div class="card border-0 bg-white shadow-sm rounded-4">
                 <div class="card-body p-4">
                   <h2 class="h5 mb-2">Background</h2>
-                  <p class="mb-0 text-secondary">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. This text can be placeholder content.
+                  <p class="text-secondary">
+                    I am a first-year student undertaking a Graduate Apprenticeship degree in IT Management for
+                    Business, with a strong passion for technology and problem-solving. I enjoy bridging the gap between
+                    IT and business by using technology-driven solutions to address real-world challenges, improve
+                    processes, and add strategic value to organisations.
+                  </p>
+
+                  <p class="text-secondary">
+                    My career to date has included working as a Digital Project Manager, where I led cross-functional
+                    teams of developers and designers to deliver client websites from concept to completion. Following
+                    this, I moved into a Solutions and Communications Specialist role, where I am responsible for
+                    managing internal IT operations and contributing to the development and improvement of in-house
+                    systems.
+                  </p>
+                  <p class="text-secondary">
+                    I am motivated to continue developing my technical and leadership skills while contributing
+                    meaningfully to innovative, technology-focused projects.
+                  </p>
                   </p>
                 </div>
               </div>
             </section>
 
             <section class="mb-4">
-              <h2 class="h4 mb-3">Skills</h2>
-
-              <div class="row">
-                <div class="col-md-6">
-                  <h6 class="text-uppercase text-muted">Frontend</h6>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item px-0">Lorem Ipsum</li>
-                    <li class="list-group-item px-0">Lorem Ipsum</li>
-                    <li class="list-group-item px-0">Lorem Ipsum</li>
-                  </ul>
-                </div>
-
-                <div class="col-md-6">
-                  <h6 class="text-uppercase text-muted">Tools</h6>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item px-0">Lorem Ipsum</li>
-                    <li class="list-group-item px-0">Lorem Ipsum</li>
-                    <li class="list-group-item px-0">Lorem Ipsum</li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-
-            <section class="mb-4">
               <div class="card border-0 bg-white shadow-sm rounded-4">
                 <div class="card-body p-4">
-                  <h2 class="h5 mb-2">Education</h2>
-                  <p class="mb-0 text-secondary">Lorem ipsum........</p>
+                  <h2 class="h5 mb-3">Skills</h2>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h6 class="text-uppercase text-muted">Capabilities</h6>
+                      <ul class="list-group list-group-flush">
+                        <ul class="skills-list">
+                          <li>IT &amp; Business Alignment</li>
+                          <li>Digital Project Management</li>
+                          <li>Stakeholder &amp; Client Communication</li>
+                          <li>Process Improvement &amp; Problem Solving</li>
+                          <li>Cross-Functional Team Leadership</li>
+                          <li>Requirements Gathering &amp; Documentation</li>
+                          <li>Internal IT Operations Management</li>
+                          <li>Systems Analysis &amp; Improvement</li>
+                          <li>Time Management &amp; Organisation</li>
+                          <li>Adaptability &amp; Continuous Learning</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                      <h6 class="text-uppercase text-muted">Tools</h6>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item px-0">Visual Studio Code</li>
+                        <li class="list-group-item px-0">Notepad ++</li>
+                        <li class="list-group-item px-0">Eclipse</li>
+                        <li class="list-group-item px-0">Microsoft Office 365</li>
+                        <li class="list-group-item px-0">Microsoft Azure</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </section>
-          </div>
-        </div>
 
+          <section class="mb-4">
+  <div class="card border-0 bg-white shadow-sm rounded-4">
+    <div class="card-body p-4">
+      <h2 class="h5 mb-3">Education</h2>
+
+      <div class="edu-item">
+        <div class="edu-date">September 2025 – Present</div>
+        <div class="edu-content">
+          <h3 class="edu-title">Graduate Apprenticeship – IT Management for Business</h3>
+          <div class="edu-school text-secondary">University of Dundee</div>
+          <p class="edu-desc text-secondary mb-0">
+            Combining academic learning with workplace delivery, focusing on aligning IT solutions
+            with business goals, systems improvement, and professional development.
+          </p>
+        </div>
       </div>
-    </div>
+
+      <div class="edu-item">
+        <div class="edu-date">June 2020 – March 2020</div>
+        <div class="edu-content">
+          <h3 class="edu-title">Diploma Digital Application Support SCQF level 6</h3>
+          <div class="edu-school text-secondary">QA Apprenticeships</div>
+          <p class="edu-desc text-secondary mb-0">
+            Focused on developing practical skills in digital applications to support real world business context.
+
   </main>
 
   <footer class="bg-dark text-light mt-5 py-4">
@@ -119,7 +183,7 @@
           <a href="#" class="text-light me-3">LinkedIn</a>
           <a href="#" class="text-light">Email</a>
         </div>
-     
+
       </div>
     </div>
   </footer>

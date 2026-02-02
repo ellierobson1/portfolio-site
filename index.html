@@ -7,6 +7,9 @@
   <title>My Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
 </head>
 
 <body>
@@ -14,36 +17,135 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="index.html">My Portfolio</a>
-      <div class="navbar-nav">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link" href="portfolio.html">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </div>
       </div>
     </div>
   </nav>
 
-  <main class="container mt-5">
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is a simple portfolio website built for my university assignment.</p>
+  <main class="container py-5">
+    <section class="p-5 rounded-4 shadow-lg border bg-white mb-4">
+      <div class="row align-items-center g-4">
+        <div class="col-md-8">
+          <h1 class="display-5 fw-semibold mb-2">Ellie Robson</h1>
+          <p class="lead text-secondary mb-3">
+            Graduate Apprenticeship student in IT Management for Business, passionate about technology and solving
+            real-world problems in a business context.
+          </p>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-purple btn-lg" href="portfolio.html">View Portfolio</a>
+            <a class="btn btn-outline-purple btn-lg" href="about.html">About Me</a>
+
+          </div>
+          <p class="mt-3 mb-0 text-secondary">
+            This portfolio was created for my university assignment to demonstrate front-end development skills using
+            HTML, CSS, and Bootstrap.
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="images/profile.png" alt="Profile photo"
+            class="rounded-circle border border-4 border-light shadow-sm"
+            style="width:180px;height:180px;object-fit:cover;">
+        </div>
+      </div>
+    </section>
+    <section class="mb-4">
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm rounded-4 h-100">
+            <div class="card-body p-4">
+              <h2 class="h5 mb-2">Digital Project Management</h2>
+              <p class="text-secondary mb-0">
+                Leading cross-functional teams of developers and designers to deliver client-focused websites and
+                digital solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm rounded-4 h-100">
+            <div class="card-body p-4">
+              <h2 class="h5 mb-2">IT &amp; Business Alignment</h2>
+              <p class="text-secondary mb-0">
+                Translating business needs into practical technical solutions that support strategy, efficiency, and
+                improved user experience.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm rounded-4 h-100">
+            <div class="card-body p-4">
+              <h2 class="h5 mb-2">Systems Improvement</h2>
+              <p class="text-secondary mb-0">
+                Supporting internal IT operations and contributing to the development and improvement of in-house
+                systems.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="mb-4">
+      <div class="card border-0 bg-white shadow-sm rounded-4">
+        <div class="card-body p-4">
+          <h2 class="h5 mb-2">Experience Snapshot</h2>
+          <p class="text-secondary mb-0">
+            I have professional experience as a Digital Project Manager and as a Solutions &amp; Communications
+            Specialist, working across client projects and internal IT systems. I enjoy collaborating with stakeholders
+            and using technology to solve business challenges.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-4">
+      <div class="card border-0 bg-white shadow-sm rounded-4 cta-card">
+        <div class="card-body p-4 d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+          <div>
+            <h2 class="h5 mb-1">Want to see my work?</h2>
+            <p class="text-secondary mb-0">Explore my projects and how I approach problem-solving and delivery.</p>
+          </div>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-purple" href="portfolio.html">View Projects</a>
+            <a class="btn btn-outline-purple" href="about.html">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
+  <footer class="bg-dark text-light mt-5 py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>My Portfolio</h5>
+          <p class="mb-0">© 2026 Ellie Robson. All rights reserved.</p>
+        </div>
+
+        <div class="col-md-6 text-md-end">
+          <a href="#" class="text-light me-3">GitHub</a>
+          <a href="#" class="text-light me-3">LinkedIn</a>
+          <a href="#" class="text-light">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
-
-<footer class="bg-dark text-light mt-5 py-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h5>My Portfolio</h5>
-                <p class="mb-0">© 2026 Ellie Robson. All rights reserved.</p> 
-            </div>
-
-            <div class="col-md-6 text-md-end">
-                <a href="#" class="text-light me-3">GitHub</a>
-                <a href="#" class="text-light me-3">LinkedIn</a>
-                <a href="#" class="text-light">Email</a>
-            </div>
-        </div>
-    </div>
-</footer>

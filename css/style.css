@@ -3,14 +3,34 @@ body {
 }
 
 /* Make boxes taller in portfolio cards*/
-.card {
-  min-height: 420px;
-}
+.project-card { min-height: 420px; }
+
+
 
 .card-img-top {
-  height: 200px;
+  height: 180px;
   object-fit: cover;
 }
+
+.card {
+  border: none;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15);
+}
+
+/*Homepage boxes*/
+
+.portfolio-card {
+  min-height: 420px;
+
+}
+
 
 /* Global styles*/
 body {
@@ -38,7 +58,7 @@ h2 {
   padding-left: 12px;
 }
 
-h2::before {
+h2:before {
   content: "";
   position: absolute;
   left: 0;
@@ -79,6 +99,73 @@ h2::before {
   border-color: #554fd8;
 }
 
+.btn-purple {
+  background-color: #6f42c1;
+  border: 2px solid #6f42c1;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.6rem 1.4rem;
+  border-radius: 0.75rem;
+}
+
+.btn-purple:hover,
+.btn-purple:focus {
+  background-color: #5a32a3;
+  border-color: #5a32a3;
+  color: #fff;
+}
+
+.btn-outline-purple {
+  background-color: transparent;
+  border: 2px solid #6f42c1;
+  color: #6f42c1;
+  font-weight: 600;
+  padding: 0.6rem 1.4rem;
+  border-radius: 0.75rem;
+}
+
+.btn-outline-purple:hover,
+.btn-outline-purple:focus {
+  background-color: #6f42c1;
+  color: #fff;
+}
+
+/* Override Bootstrap primary (only if you use btn-primary) */
+.btn-primary {
+  background-color: #6f42c1;
+  border-color: #6f42c1;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #5a32a3;
+  border-color: #5a32a3;
+}
+
+.btn-primary:active {
+  background-color: #4c2a91;
+  border-color: #4c2a91;
+}
+
+  /*Override*/
+
+  .btn-primary {
+  background-color: #6f42c1;
+  border-color: #6f42c1;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #5a32a3;
+  border-color: #5a32a3;
+}
+
+.btn-primary:active {
+  background-color: #4c2a91;
+  border-color: #4c2a91;
+}
+
+
 /*Footer*/
 
 footer {
@@ -91,4 +178,139 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+.about-badge {
+  background: #6C63FF;
+  color: #fff;
+}
+
+.about-badge:hover {
+  filter: brightness(0.95);
+}
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 1.2rem 2.4rem rgba(0,0,0,0.12);
+}
+/* Skills List*/
+
+.skills {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+.skills h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1.75rem;
+  letter-spacing: -0.02em;
+}
+
+.skills h3 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.skills-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+}
+
+.skills-list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #6c757d;
+  font-weight: 600;
+}
+
+/* Education layout */
+.edu-item {
+  display: grid;
+  grid-template-columns: minmax(180px, 220px) 1fr;
+  gap: 1.25rem;
+  padding: 0.75rem 0;
+  align-items: start;
+}
+
+.edu-item + .edu-item {
+  margin-top: 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.edu-date {
+  font-size: 0.95rem;
+  font-weight: 600;
+  opacity: 0.75;
+  line-height: 1.25;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.edu-title {
+  font-size: 1.1rem;
+  margin: 0 0 0.25rem;
+  font-weight: 700;
+}
+
+.edu-school {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  opacity: 0.85;
+}
+
+.edu-desc {
+  line-height: 1.45;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  .edu-item {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
+
+
+/*Mobile*/
+@media (max-width: 576px) {
+  .edu-item {
+    grid-template-columns: 1fr;
+  }
+
+  .edu-date {
+    margin-bottom: 0.25rem;
+  }
+}
+/* Explore projects homepage*/
+.cta-card {
+  border-left: 6px solid #6C63FF;
+  background: linear-gradient(180deg, rgba(108,99,255,0.06) 0%, rgba(255,255,255,1) 60%);
+}
+
+.cta-card .cta-title {
+  margin: 0;
+  font-weight: 750;
+  letter-spacing: -0.01em;
+}
+
+.cta-card .cta-text {
+  margin: 0.35rem 0 0;
+  line-height: 1.5;
 }
