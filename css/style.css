@@ -11,3 +11,84 @@ body {
   height: 200px;
   object-fit: cover;
 }
+
+/* Global styles*/
+body {
+  background:linear-gradient(180deg, #f6f7fb 0%, #ffffff 100%);
+  color: #111;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* Main Layout*/
+main {
+  min-height: 70vh;
+}
+
+main > .card {
+    border-left: 6px solid #6C63FF
+}
+
+/*Typography*/
+h1 {
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  position: relative;
+  padding-left: 12px;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  height: 1em;
+  width: 4px;
+  background: #6C63FF;
+  border-radius: 2px;
+}
+
+/*Badges*/
+
+.badge {
+  background-color: #6C63FF !important;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+/*Cards*/
+.card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.08);
+}
+
+/* Buttons*/
+
+.btn-dark {
+  background-color: #6C63FF;
+  border-color: #6C63FF;
+}
+
+.btn-dark:hover {
+  background-color: #554fd8;
+  border-color: #554fd8;
+}
+
+/*Footer*/
+
+footer {
+  background-color: #111;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
