@@ -100,8 +100,8 @@ h2:before {
 }
 
 .btn-purple {
-  background-color: #6f42c1;
-  border: 2px solid #6f42c1;
+  background-color: #6C63FF;
+  border: 2px solid #6C63FF;
   color: #fff;
   font-weight: 600;
   padding: 0.6rem 1.4rem;
@@ -110,15 +110,15 @@ h2:before {
 
 .btn-purple:hover,
 .btn-purple:focus {
-  background-color: #5a32a3;
-  border-color: #5a32a3;
+  background-color: #6C63FF;
+  border-color: #6C63FF;
   color: #fff;
 }
 
 .btn-outline-purple {
   background-color: transparent;
-  border: 2px solid #6f42c1;
-  color: #6f42c1;
+  border: 2px solid #6C63FF;
+  color: #6C63FF;
   font-weight: 600;
   padding: 0.6rem 1.4rem;
   border-radius: 0.75rem;
@@ -126,43 +126,43 @@ h2:before {
 
 .btn-outline-purple:hover,
 .btn-outline-purple:focus {
-  background-color: #6f42c1;
+  background-color: #6C63FF;
   color: #fff;
 }
 
 /* Override Bootstrap primary (only if you use btn-primary) */
 .btn-primary {
-  background-color: #6f42c1;
-  border-color: #6f42c1;
+  background-color: #6C63FF;
+  border-color: #6C63FF;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #5a32a3;
-  border-color: #5a32a3;
+  background-color: #6C63FF;
+  border-color: #6C63FF;
 }
 
 .btn-primary:active {
-  background-color: #4c2a91;
-  border-color: #4c2a91;
+  background-color: #6C63FF;
+  border-color: #6C63FF;
 }
 
   /*Override*/
 
   .btn-primary {
-  background-color: #6f42c1;
-  border-color: #6f42c1;
+  background-color: #6C63FF;
+  border-color: #6C63FF;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #5a32a3;
-  border-color: #5a32a3;
+  background-color: #6C63FF;
+  border-color: #6C63FF
 }
 
 .btn-primary:active {
-  background-color: #4c2a91;
-  border-color: #4c2a91;
+  background-color: #6C63FF;
+  border-color: #6C63FF;
 }
 
 
@@ -279,6 +279,100 @@ footer a:hover {
   font-size: 0.95rem;
   margin: 0;
 }
+
+/*Hero*/
+
+.cta-card {
+  background: linear-gradient(90deg, rgba(108,99,255,0.10) 0%, rgba(255,255,255,1) 55%);
+  border-left: 6px solid #6C63FF;
+}
+
+
+/* Facts/figures*/
+
+.stats-card {
+  border: 1px solid rgba(0,0,0,0.06);
+  background: linear-gradient(180deg, rgba(108,99,255,0.07) 0%, #ffffff 70%);
+  overflow: hidden;
+}
+
+.stat-number {
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.stat-label {
+  font-weight: 600;
+  color: #6c757d;
+  margin: 0;
+}
+
+.stat-accent {
+  width: 42px;
+  height: 4px;
+  border-radius: 999px;
+  background: #6C63FF;
+  margin-bottom: 0.9rem;
+}
+
+
+/*Featured projects*/
+
+.featured-projects-section {
+  background: linear-gradient(
+    180deg,
+    rgba(108, 99, 255, 0.06) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.featured-projects-inner {
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.06);
+}
+
+.featured-projects-section .card-img-top {
+  height: 170px;
+  object-fit: cover;
+}
+
+.featured-link {
+  color: #6C63FF;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.featured-link:hover {
+  text-decoration: underline;
+}
+.featured-projects-section .card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.featured-projects-section .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1.5rem 3rem rgba(0,0,0,0.12);
+}
+.featured-projects-section {
+  background: none;
+}
+
+.featured-projects-inner {
+  background: linear-gradient(
+    180deg,
+    rgba(108, 99, 255, 0.06) 0%,
+    rgba(255, 255, 255, 1) 70%
+  );
+  border-radius: 1.5rem;
+}
+
+
 
 @media (max-width: 576px) {
   .edu-item {
