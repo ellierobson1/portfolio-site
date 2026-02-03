@@ -318,6 +318,7 @@ footer a:hover {
   background: #6C63FF;
   margin-bottom: 0.9rem;
 }
+.text-purple-600 { color: #6C63FF; }
 
 
 /*Featured projects*/
@@ -370,8 +371,59 @@ footer a:hover {
     rgba(255, 255, 255, 1) 70%
   );
   border-radius: 1.5rem;
+
 }
 
+/* Experience section*/
+
+.experience-card {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.experience-card::before {
+  content: "";
+  position: absolute;
+  top: 1.25rem;
+  left: 0.75rem;
+  height: calc(100% - 2.5rem);
+  width: 4px;
+  background: #6a3df0;
+  border-radius: 4px;
+}
+.experience-card .card-body {
+  padding: 2.25rem 2.75rem;
+}
+
+.experience-card {
+  background: linear-gradient(180deg, #ffffff, #faf8ff);
+}
+
+.experience-card::before {
+  top: 1rem;
+  bottom: 1rem;
+}
+.experience-card {
+  border: 1px solid #eee;
+}
+.experience-card {
+  border-radius: 1.25rem;
+}
+.experience-card h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.experience-card h2 {
+  margin-bottom: 1rem;
+}
+.experience-card p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+.experience-card {
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.03), 0 6px 20px rgba(0,0,0,0.06);
+}
 
 
 @media (max-width: 576px) {
