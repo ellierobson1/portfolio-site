@@ -491,3 +491,7 @@ li {
 .back-link:hover {
   text-decoration: underline;
 }
+.list-group-item {
+  color: var(--muted);
+  font-weight: 400;
+}
