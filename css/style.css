@@ -27,10 +27,29 @@
 
 /* Global styles*/
 body {
-  background:linear-gradient(180deg, #f6f7fb 0%, #ffffff 100%);
-  color: #111;
+  background: linear-gradient(180deg, #f6f7fb 0%, #ffffff 100%);
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text);
 }
+
+h2 {
+  position: relative;
+  padding-left: 12px;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  height: 1em;
+  width: 4px;
+  background: #6C63FF;
+  border-radius: 2px;
+}
+
 
 /* Main Layout*/
 main {
@@ -41,26 +60,19 @@ main > .card {
     border-left: 6px solid #6C63FF;
 }
 
-/*Typography*/
-h1 {
-  letter-spacing: -0.03em;
+/* Text rules*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  color: var(--text);
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
-h2 {
-  position: relative;
-  padding-left: 12px;
-}
-
-h2:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.2em;
-  height: 1em;
-  width: 4px;
-  background: #6C63FF;
-  border-radius: 2px;
-}
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+h4, h5, h6 { font-size: 1.1rem; }
 
 /*Badges*/
 
@@ -82,21 +94,29 @@ h2:before {
   border-color: #554fd8;
 }
 
-.btn-purple {
-  background-color: #6C63FF;
-  border: 2px solid #6C63FF;
-  color: #fff;
-  font-weight: 600;
-  padding: 0.6rem 1.4rem;
-  border-radius: 0.75rem;
+.btn-purple{
+  background-color:#6C63FF;
+  border:2px solid #6C63FF;
+  color:#fff;
+  font-weight:600;
+  padding:0.6rem 1.4rem;
+  border-radius:0.75rem;
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    background-color .2s ease,
+    border-color .2s ease;
 }
 
 .btn-purple:hover,
-.btn-purple:focus {
-  background-color: #6C63FF;
-  border-color: #6C63FF;
-  color: #fff;
+.btn-purple:focus{
+  background-color:#554fd8;
+  border-color:#554fd8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(108,99,255,.35);
+  color:#fff;
 }
+
 
 .btn-outline-purple {
   background-color: transparent;
@@ -146,42 +166,35 @@ footer .col-md-6 h5 {
 
 /* Skills List*/
 
+
 .skills {
   max-width: 720px;
   margin: 0 auto;
   padding: 1.25rem;
 }
 
-.skills h2 {
-  margin: 0 0 0.25rem;
-  font-size: 1.75rem;
-  letter-spacing: -0.02em;
-}
-
-.skills h3 {
-  margin: 0 0 1rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  opacity: 0.8;
-}
-
 .skills-list {
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 
 .skills-list li {
   position: relative;
   padding-left: 1.5rem;
   margin-bottom: 0.6rem;
-  line-height: 1.4;
+
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: var(--muted);
 }
 
 .skills-list li::before {
   content: "—";
   position: absolute;
   left: 0;
-  color: #6c757d;
+
+  color: #6C63FF;
   font-weight: 600;
 }
 
@@ -458,13 +471,6 @@ footer .col-md-6 h5 {
   color: var(--muted);
 }
 
-/* Make headings and fonts consistent throughout site*/
-
-h1, h2, h3, h4, h5, h6 {
-  color: var(--text);
-  font-weight: 600;
-}
-
 p,
 li {
   color: var(--muted);
@@ -495,3 +501,80 @@ li {
   color: var(--muted);
   font-weight: 400;
 }
+/*Makes the Skills section typography consistent*/
+.skills h6,
+.skills .text-uppercase {
+  text-transform: none !important;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+  color: var(--text) !important;
+}
+
+/*Make both lists match (Capabilities + Tools)*/
+.skills .skills-list li,
+.skills .list-group-item {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--muted) !important;
+}
+
+/* Dash bullets purple */
+.skills .skills-list li::before {
+  color: #6C63FF;
+  font-weight: 700;
+}
+.skills .list-group-item {
+  background: transparent;
+  border-color: rgba(0,0,0,0.08);
+}
+
+/*Force all paragraph text to be consistent throughout site*/
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+/*Stop Bootstrap from changing paragraph text*/
+
+p.lead,
+p.small,
+.text-secondary {
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  color: var(--muted) !important;
+}
+/*Make body text consistent everywhere*/
+p,
+li,
+.list-group-item {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.skills-list li {
+  line-height: 1.6;     
+  font-weight: 400;
+}
+
+.edu-desc {
+  font-size: 1rem;    
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+/*Make Education text match body styles*/
+
+.edu-desc,
+.edu-school,
+.edu-date {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--muted);
+}
+
