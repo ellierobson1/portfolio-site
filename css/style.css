@@ -3,19 +3,19 @@
   --muted:#6c757d;
 }
 
-/* Make boxes taller in portfolio cards*/
-.project-card { min-height: 420px; }
+/* Make boxes taller in portfolio cards and Project card hover*/ 
 
 .card-img-top {
   height: 180px;
   object-fit: cover;
 }
-
-.card {
-  border: none;
-  border-radius: 1.25rem;
-  overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.project-card{
+  min-height: 420px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.project-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 1.25rem 2.5rem rgba(0,0,0,0.14);
 }
 
 /*Homepage boxes*/
@@ -141,8 +141,8 @@ h4, h5, h6 { font-size: 1.1rem; }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #6C63FF;
-  border-color: #6C63FF;
+  background-color: #554fd8;
+  border-color: #554fd8;
 }
 
 /*Footer*/
@@ -179,24 +179,14 @@ footer .col-md-6 h5 {
   margin: 0;
 }
 
-.skills-list li {
-  position: relative;
-  padding-left: 1.5rem;
-  margin-bottom: 0.6rem;
-
-  font-size: 0.95rem;
-  line-height: 1.45;
-  color: var(--muted);
-}
-
-.skills-list li::before {
+.skills-list li::before{
   content: "—";
   position: absolute;
   left: 0;
-
   color: #6C63FF;
-  font-weight: 600;
+  font-weight: 700;
 }
+
 
 /* Education layout */
 .edu-item {
@@ -305,53 +295,34 @@ footer .col-md-6 h5 {
 
 /* Experience section*/
 
-.experience-card {
+.experience-card{
   position: relative;
   padding-left: 1.5rem;
-}
-
-.experience-card::before {
-  content: "";
-  position: absolute;
-  top: 1.25rem;
-  left: 0.75rem;
-  height: calc(100% - 2.5rem);
-  width: 4px;
-  background: #6a3df0;
-  border-radius: 4px;
-}
-.experience-card .card-body {
-  padding: 2.25rem 2.75rem;
-}
-
-.experience-card {
-  background: linear-gradient(180deg, #ffffff, #faf8ff);
-}
-
-.experience-card::before {
-  top: 1rem;
-  bottom: 1rem;
-}
-.experience-card {
   border: 1px solid #eee;
-}
-.experience-card {
   border-radius: 1.25rem;
-}
-.experience-card h2 {
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-.experience-card h2 {
-  margin-bottom: 1rem;
-}
-.experience-card p {
-  color: #555;
-  line-height: 1.6;
-  font-size: 1.05rem;
-}
-.experience-card {
+  background: linear-gradient(180deg, #ffffff, #faf8ff);
   box-shadow: inset 0 0 10px rgba(0,0,0,0.03), 0 6px 20px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.experience-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 1.25rem 2.5rem rgba(0,0,0,0.12);
+}
+
+.experience-card::before{
+  content:"";
+  position:absolute;
+  left:0.75rem;
+  top:1rem;
+  bottom:1rem;
+  width:4px;
+  background:#6C63FF;
+  border-radius:4px;
+}
+
+.experience-card .card-body{
+  padding: 2.25rem 2.75rem;
 }
 
 /*Mobile*/
@@ -471,11 +442,6 @@ footer .col-md-6 h5 {
   color: var(--muted);
 }
 
-p,
-li {
-  color: var(--muted);
-}
-
 .card strong {
   color: var(--text);
   font-weight: 600;
@@ -497,10 +463,7 @@ li {
 .back-link:hover {
   text-decoration: underline;
 }
-.list-group-item {
-  color: var(--muted);
-  font-weight: 400;
-}
+
 /*Makes the Skills section typography consistent*/
 .skills h6,
 .skills .text-uppercase {
@@ -511,61 +474,43 @@ li {
 }
 
 /*Make both lists match (Capabilities + Tools)*/
-.skills .skills-list li,
-.skills .list-group-item {
+.skills-list li{
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.6rem;
   font-size: 1rem;
-  font-weight: 400;
   line-height: 1.6;
-  color: var(--muted) !important;
+  font-weight: 400;
+  color: var(--muted);
 }
 
-/* Dash bullets purple */
-.skills .skills-list li::before {
-  color: #6C63FF;
-  font-weight: 700;
-}
 .skills .list-group-item {
   background: transparent;
   border-color: rgba(0,0,0,0.08);
 }
 
-/*Force all paragraph text to be consistent throughout site*/
-p {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.6;
-  color: var(--muted);
-  margin-bottom: 1rem;
-}
 /*Stop Bootstrap from changing paragraph text*/
 
-p.lead,
-p.small,
-.text-secondary {
+main p.lead,
+main p.small,
+main .text-secondary{
   font-size: 1rem !important;
   font-weight: 400 !important;
   color: var(--muted) !important;
 }
+
 /*Make body text consistent everywhere*/
-p,
-li,
-.list-group-item {
+
+main p,
+main li,
+main .list-group-item{
   font-size: 1rem;
   line-height: 1.6;
   font-weight: 400;
   color: var(--muted);
 }
 
-.skills-list li {
-  line-height: 1.6;     
-  font-weight: 400;
-}
-
-.edu-desc {
-  font-size: 1rem;    
-  line-height: 1.6;
-  color: var(--muted);
-}
+main p{ margin-bottom: 1rem; }
 
 /*Make Education text match body styles*/
 
@@ -578,3 +523,11 @@ li,
   color: var(--muted);
 }
 
+/*Accessibility*/
+
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible{
+  outline: 3px solid rgba(108,99,255,.45);
+  outline-offset: 3px;
+}
