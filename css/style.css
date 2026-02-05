@@ -523,6 +523,18 @@ main p{ margin-bottom: 1rem; }
   color: var(--muted);
 }
 
+/*Set paragraph typography inside cards and list groups */
+
+main .card p,
+main .list-group-item p{
+  font-size: 1rem !important;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--muted) !important;
+  margin-bottom: 1rem;
+}
+
+
 /*Accessibility*/
 
 a:focus-visible,
@@ -531,3 +543,4 @@ button:focus-visible,
   outline: 3px solid rgba(108,99,255,.45);
   outline-offset: 3px;
 }
+
