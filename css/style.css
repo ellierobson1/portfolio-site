@@ -74,6 +74,13 @@ h2 { font-size: 1.5rem; }
 h3 { font-size: 1.25rem; }
 h4, h5, h6 { font-size: 1.1rem; }
 
+.card-title.h5 {
+  color: var(--text);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
 /*Badges*/
 
 .badge {
@@ -160,7 +167,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-footer .col-md-6 h5 {
+footer .col-md-6 .h5 {
   color: #6C63FF !important;
 }
 
@@ -186,6 +193,10 @@ footer .col-md-6 h5 {
   color: #6C63FF;
   font-weight: 700;
 }
+.section-heading {
+  margin-top: 1.25rem;
+}
+
 
 
 /* Education layout */
@@ -525,7 +536,7 @@ main p{ margin-bottom: 1rem; }
 
 /*Set paragraph typography inside cards and list groups */
 
-main .card p,
+main .card p:not(.card-title),
 main .list-group-item p{
   font-size: 1rem !important;
   line-height: 1.6;
@@ -533,7 +544,6 @@ main .list-group-item p{
   color: var(--muted) !important;
   margin-bottom: 1rem;
 }
-
 
 /*Accessibility*/
 
