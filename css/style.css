@@ -173,7 +173,6 @@ footer .col-md-6 .h5 {
 
 /* Skills List*/
 
-
 .skills {
   max-width: 720px;
   margin: 0 auto;
@@ -196,8 +195,6 @@ footer .col-md-6 .h5 {
 .section-heading {
   margin-top: 1.25rem;
 }
-
-
 
 /* Education layout */
 .edu-item {
@@ -339,9 +336,9 @@ footer .col-md-6 .h5 {
 /*Mobile*/
 
 @media (max-width: 576px) {
-  main .container, main.container{
-    padding-left: 18px !important;
-    padding-right: 18px !important;
+  main.container{
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   .edu-item {
@@ -413,10 +410,6 @@ footer .col-md-6 .h5 {
   color: rgba(255,255,255,0.9);
 }
 
-.project-hero{
-  margin-left: -12px;
-  margin-right: -12px;
-}
 
 /* Fix responsive pills on about page */
 .skills-badges .badge{
